@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+<!-- user window page  -->
+    {% block content %}
+<style>
+.btn-dwl{
+background-color: white;
+color: red;
+border: 1px solid red;
+border-radius : 18px;
+<!--font-size: 18px;-->
+}
+</style>
+<div class="container mt-5 mb-5" id="v">
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{embd}}" allowfullscreen></iframe>
+        </div>
+
+    <table class="table mt-4 table-bordered table-striped table-hover table-dark">
+          <thead class="thead-danger">
+            <tr>
+              <th scope="col">Resolution</th>
+              <th scope="col">Format</th>
+              <th scope="col">Size</th>
+              <th scope="col">Download</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for i in obj %}
+
+            <tr class="fe">
+
+                <td class="resolution">{{ i.res }}</td>
+                <td class="format">{{ i.frm }}</td>
+                <td class="size">{{ i.size }}</td>
+                <td>
+                <form>
+                    {% csrf_token %}
+                    <button type="button"  name="url"  type="submit" id="download" class="give btn btn-danger btn-dwl" >Download</button>
+                </form>
+                </td>
+
+            </tr>
+
+         {% endfor %}
+
+
+    </table>
+</div>
+
+{% endblock %}

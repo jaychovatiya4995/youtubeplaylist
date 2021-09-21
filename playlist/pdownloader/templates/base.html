@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'css/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/faqs.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contactus.css' %}">
+    <style>
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md main-nav">
+        <div class="container">
+            <img src="{% static 'images/btclod_logo.png' %}" class="img-fluid logo-img" alt="logo-main">
+            <button class="navbar-toggler nav-button toggle-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-light"></i>
+            </button>
+            <div class="d-flax">
+                <div class="collapse navbar-collapse topnav-right" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <div class="d-flex ml-auto">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item  ml-auto">
+                                    <a class="nav-link title" aria-current="page" href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li class="nav-item  ml-auto">
+                                    <a class="nav-link title" aria-current="page" href="{% url 'about' %}">About</a>
+                                </li>
+                                <li class="nav-item  ml-auto">
+                                    <a class="nav-link title" aria-current="page" href="{% url 'contact' %}">Contact
+                                        Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+     {% endblock %}
+
+    <footer class="text-center text-white" style="background-color: #e84d56;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <h2 class="t-footer">SpecCRM</h2>
+
+            <section class="mb-4">
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'home' %}" role="button"
+                    data-mdb-ripple-color="dark">Home</a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'about' %}" role="button"
+                    data-mdb-ripple-color="dark">About</a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'faqs' %}" role="button"
+                    data-mdb-ripple-color="dark">FAQs</a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'terms' %}"
+                    role="button" data-mdb-ripple-color="dark">Terms of use</a>
+
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'privacy' %}"
+                    role="button" data-mdb-ripple-color="dark">Privacy Policy</a>
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer" href="{% url 'copy' %}"
+                    role="button" data-mdb-ripple-color="dark">Copyright</a>
+
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 sub-footer-l" href="{% url 'dmca' %}" role="button"
+                    data-mdb-ripple-color="dark">DMCA</a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3">
+            © 2021 SPECCRM.
+            <a class="text-white" href="http://speccrm.com/">All rights Recerved</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/show.js' %}"></script>
+<!--    <script src="{% static 'js/gave.js' %}"></script>-->
+    <script src="{% static 'js/give.js' %}"></script>
+
+
+</body>
+
+</html>

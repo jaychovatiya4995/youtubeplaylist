@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+    {% block content %}
+    <!-- header Section -->
+    <main class="main-container main-nav">
+        <div class="p-5 p-md-5 mb-4 text-white rounded ">
+            <div class="col-md-12 px-0">
+                <h1 class="display-4 text-center fw-normal">Contact Us</h1>
+            </div>
+        </div>
+    </main>
+
+    <!-- contact Form -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h2 class="contact-title">Get In Touch With Us</h2>
+                <form>
+                    <div class="mb-4 mt-5">
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp"
+                            placeholder="Full Name*" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email*" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-4">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Your Message*" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit text-white">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="faqs pt-4 pb-4">
+                    <i class="fas fa-user-check icon-user ps-5"></i>
+                    <h3 class="que">Have Any Question?</h3>
+                    <p class="sub-que">Check out our frequently asked questions.</p>
+                    <button class="btn btn-faqs text-white"><a href="{% url 'faqs' %}"
+                            class="text-decoration-none text-white">FAQS</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card -->
+    <div class="main-container service mt-5 mb-5">
+        <div class="container">
+            <div class="row d-flex flex-wrap">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="far fa-file-video icon-st"></i>
+                        <p class="icon-txt">Youtube to MP4</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fas fa-headset icon-st"></i>
+                        <p class="icon-txt">Youtube to WAV</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fas fa-compact-disc icon-st"></i>
+                        <p class="icon-txt">Youtube to MP2</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fab fa-digital-ocean icon-st"></i>
+                        <p class="icon-txt">Youtube to Ogg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex flex-wrap">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fab fa-meetup icon-st"></i>
+                        <p class="icon-txt">Youtube to MOV</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fab fa-buysellads icon-st"></i>
+                        <p class="icon-txt">Youtube to AVI</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="far fa-play-circle icon-st"></i>
+                        <p class="icon-txt">Youtube to M4A</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="service-item mx-auto mt-4 text-center">
+                        <i class="fas fa-expand icon-st"></i>
+                        <p class="icon-txt">Youtube to FLAC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

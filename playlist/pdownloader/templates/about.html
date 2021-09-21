@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+
+
+    <!-- header section -->
+    <main class="main-container main-nav">
+        <div class="p-5 p-md-5 mb-4 text-white rounded ">
+            <div class="col-md-12 px-0">
+                <h1 class="display-4 text-center fw-normal">SpecCRM About US</h1>
+            </div>
+        </div>
+    </main>
+
+    <!-- images containt -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6 col-12">
+                <img src="{% static 'images/about_us.png' %}" alt="about" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-12">
+                <h1 class="abt-us pb-3">About Us</h1>
+                <p class="abt-title">Btclod is a modern and cutting-edge <b>YouTube downloader</b> that can download and
+                    <b> convert YouTube videos.</b>
+                    Using Btclod, you can go from <b>YouTube to MP3, YouTube to MP4,</b> or any of its supported
+                    formats. There
+                    is no software to be downloaded; all conversions are done through our online user interface.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- last section -->
+    <div class="main-container bg-light mt-5 mb-5 pb-5">
+        <div class="container pt-5 lst-sec">
+            <h2 class="dwload">SpecCRM's Youtube To .MP3 .MP4 Converter And Downloader</h2>
+            <p class="dwload-subtitle">Fast, simple, and anonymous, SpecCRM is a YouTube downloader and a YouTube
+                converter that can convert from
+                YouTube to MP3, YouTube to MP4, or YouTube to WAV, in a matter of seconds.</p>
+        </div>
+    </div>
+
+{% endblock %}

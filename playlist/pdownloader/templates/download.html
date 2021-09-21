@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Thank you Page -->
+<style>
+    .icon-download {
+
+        font-size: 80px;
+        color: green;
+    }
+
+    .btn-done {
+        color: white;
+        background-color: green;
+        font-size: 23px;
+        border-radius: 9px;
+        border: 4px solid green;
+    }
+
+    .btn-done:hover {
+        color: green;
+        background-color: white;
+        border: 4px solid green;
+    }
+</style>
+
+<!-- header section -->
+<main class="main-container main-nav">
+    <div class="p-5 p-md-5 mb-4 text-white rounded ">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 text-center fw-normal">Download</h1>
+        </div>
+    </div>
+</main>
+
+<!-- download section -->
+<div class="container">
+    <div class="mx-auto mt-4 text-center">
+        <h3 class="">Thank You !!</h3>
+        <i class="far fa-check-circle icon-download mt-5 mb-4"></i>
+        <h2 class="mb-4">{{msg}}</h2><br>
+        <a href="{% url 'home' %}" class="text-decoration-none btn btn-done mb-5">Done</a>
+    </div>
+</div>
+
+{% endblock %}

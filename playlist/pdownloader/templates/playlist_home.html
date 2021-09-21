@@ -1,0 +1,360 @@
+{% extends "base.html" %}
+
+<!-- search page  -->
+    {% block content %}
+    <!-- header section -->
+<style>
+.btn-dwl{
+background-color: white;
+color: red;
+border: 1px solid red;
+border-radius : 18px;
+<!--font-size: 18px;-->
+}
+.brd{
+ border: 2px solid white;
+ padding: 10px 20px;
+}
+</style>
+
+    <main class="main-container main-nav">
+        <div class="p-5 p-md-5 mb-4 text-white rounded ">
+            <div class="col-md-12 px-0">
+                <h1 class="display-4 text-center fw-normal">Youtube Downloader</h1>
+                <p class="lead my-3 text-center">The best Youtube Downloader - Video Downloader. It’s fast, free,
+                    and
+                    fantastic!</p>
+                <div class="d-flex justify-content-center mb-5">
+<!--                    <form action="{% url 'download' %}" method="GET">-->
+                    <form id="send">
+                    {% csrf_token %}
+                    <div class="searchbar mt-5">
+<!--                        <input class="search_input" id="text_link" type="text" name="url" value="{{ request.GET.url }}"-->
+<!--                                placeholder="Paste Here Youtube Link To Download..." required>-->
+
+                        <input class="search_input" id="text_link" type="text" name="url" placeholder="Paste Here Playlist Link To Download..." required>
+
+                        <button class="load btn text-white search_icon" id="load" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+        <div class="text-center">
+        <a href="" class="brd text-decoration-none title text-center" >Youtube  Video</a>
+        <a href="" class="brd text-decoration-none title text-center " >youtube to mp3</a>
+<!--        <a href="" class="text-decoration-none title text-center " >Instagram</a>-->
+<!--        <a href="" class="text-decoration-none title text-center " >Facebook</a>-->
+<!--            </div>-->
+        </div>
+    </main>
+    <!-- sub-header -->
+    <div class="main-container">
+        <p class="sub-header text-center">By using our service you are accepting our terms of use.</p>
+    </div>
+<!--    <iframe src="{% url 'download' %}" id="show"></iframe>-->
+    <div class="container mt-5 mb-5" id="v">
+<!--        <form>-->
+<!--               <button type="button"  name="url" id="download" onclick="me()" class="give btn btn-danger btn-dwl" >Download</button>-->
+<!--        </form>-->
+
+    </div>
+
+    <!-- main title -->
+    <div class="container mt-5">
+        <h1 class="text-center">YouTube Downloader Features</h1>
+        <p class="main-title mt-3">Youtube is such a huge part of our modern society. Some rely on it for
+            entertainment,
+            whether in audio or
+            video form. That is why many of us would prefer to have access to our favorite YouTube videos, MP3, and
+            audio anytime, anywhere. The question is “How?” The answer is the ultimate Youtube Downloader.
+            SPECCEM.COM
+            online Youtube downloader enables you to download anything that you can from Youtube, whether that’s
+            audio,
+            MP3, playlist, or video. Whatever is in there, the Youtube downloader will get it for you. With its
+            capabilities, it’s no exaggeration to say it’s the best Youtube downloader around!</p>
+    </div>
+
+    <!-- card -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fa fa-download icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">SpecCRM Youtube Video Downloader</h5>
+                        <p class="card-text mt-3 crd-txt">Sports highlights? Music videos? Celebrity interviews?
+                            Interesting
+                            documentaries? Anything you can find on Youtube, you can download using the Youtube
+                            Downloader straight to your device. You can also download Youtube videos as is or
+                            convert
+                            them to any format of your choice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fab fa-youtube icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">YouTube MP3 Downloader</h5>
+                        <p class="card-text mt-3 crd-txt">Youtube is a treasure trove of good music, and there is a
+                            lot
+                            of music available for download through common methods. However, unless you sign up for
+                            Youtube’s premium service, you may not be able to download some of these songs. With
+                            Youtube
+                            Downloader, you can download Youtube MP3 with no fear of such limits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fas fa-music icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">YouTube Audio Downloader</h5>
+                        <p class="card-text mt-3 crd-txt">Youtube approves only four audio formats-- MP3 in MP3/WAV
+                            container, PCM audio in WAV container, AAC in MOV container, and FLAC. However, with our
+                            Youtube downloader, it doesn’t matter. You can download Youtube audio in any format or
+                            download it in one format and convert it to another. As our mantra goes, we got all the
+                            bases covered.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fas fa-film icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">YouTube Playlist Downloader</h5>
+                        <p class="card-text mt-3 crd-txt">If you wanted to download MP3 and some other audio formats
+                            here and there, why not make your own playlist on Youtube and download it? That should
+                            make
+                            your life a lot easier, wouldn’t it? Downloading YouTube playlists created by you or
+                            other
+                            users are a convenient way to thematically watch videos or listen to music.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fas fa-tachometer-alt icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">Lightning Quick Downloads</h5>
+                        <p class="card-text mt-3 crd-txt">Youtube Downloader’s interface is friendly enough that
+                            even a
+                            beginner can navigate without any problems. Would that be all? No. When you are there,
+                            the
+                            download process takes only a few moments, and it will give you what you want-- all the
+                            videos, audio, and music into your device for FREE!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card card-contain m-auto">
+                    <i class="fas fa-sync-alt icon-st" aria-hidden="true"></i>
+                    <div class="card-body">
+                        <h5 class="card-title crd-heading mt-3">Youtube Video To MP3</h5>
+                        <p class="card-text mt-3 crd-txt">Here is where YouTube Downloader sets itself apart-- it
+                            also
+                            has format conversion capabilities. That means YouTube Downloader does not only download
+                            videos, but it could also convert them to MP3 for easy storage. This feature is optimal
+                            for
+                            downloading podcasts or other videos that the visuals are not as important.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  some title -->
+    <div class="main-container bg-light">
+        <div class="container pt-5 pb-5">
+            <div class="f-title">
+                <p>Have you ever wondered how to download Mp3 from Youtube or how to convert Youtube to Mp3? Well,
+                    you
+                    came to the right place. YouTube Downloader will do that for you and more. Before anything else,
+                    let
+                    me tell you something about Youtube first.</p>
+                <p>Youtube is very much a part of our everyday lives as drinking coffee in the morning. After all,
+                    it is
+                    the second most popular social media platform behind Facebook with now over two billion active
+                    monthly users! These users (that includes you and me) gobble Youtube like a hungry turkey,
+                    spending
+                    one billion cumulative hours a day watching these videos. And it’s not going to stop anytime
+                    soon
+                    because every minute, there are 500 hours of video uploaded on Youtube.</p>
+                <p>What do you want to do with all of this content? Well, it’s always a good idea to have all of
+                    your
+                    favorite Youtube music or videos on your device. You may frequent areas where Internet
+                    connections
+                    are slow, so it would help if there is actually a way to view videos or listen to songs offline.
+                    If
+                    you are thinking about doing the same thing, it’s always a plus having a reliable Youtube video
+                    downloader and Youtube to MP3 converter.</p>
+                <p>Now, a question that is probably racing in your mind right now is, “How do I exactly use the
+                    YouTube
+                    Downloader?” Well, you will be able to experience the amazing capabilities of the YouTube
+                    Downloader
+                    following these simple steps.</p>
+            </div>
+            <div class="d-flex bg-white mt-4 align-content-center">
+                <i class="fa fa-qrcode icon-list me-2" aria-hidden="true"></i>
+                <p class="ms-4 l-title">
+                    You need to copy the URL of the Youtube video found in the address bar.</p>
+            </div>
+            <div class="d-flex bg-white mt-4 align-content-center">
+                <i class="far fa-window-restore icon-list me-2" aria-hidden="true"></i>
+                <p class="ms-4 l-title">
+                    Gain access to the Youtube Downloader’s homepage, perhaps by opening another tab in your web
+                    browser.</p>
+            </div>
+            <div class="d-flex bg-white mt-4 align-content-center">
+                <i class="fas fa-laptop-code icon-list me-2" aria-hidden="true"></i>
+                <p class="ms-4 l-title">
+                    After copying the Youtube video URL, paste it into the provided space in the Youtube Downloader
+                    page.</p>
+            </div>
+            <div class="d-flex bg-white mt-4 align-content-center">
+                <i class="fas fa-film  icon-list me-2" aria-hidden="true"></i>
+                <p class="ms-4 l-title">
+
+                    Youtube Downloader offers a variety of options on what you want to do with your chosen video.
+                    You
+                    may convert<b> Youtube video to MP3 (convertidor de youtube a mp3)</b> or download it as is on a
+                    specified
+                    folder.</p>
+            </div>
+            <div class="d-flex bg-white mt-4 align-content-center">
+                <i class="fa fa-download icon-list me-2" aria-hidden="true"></i>
+                <p class="ms-4 l-title">
+                    And now the moment of truth! After clicking the Download option, wait a few moments and the
+                    video or
+                    MP3 will be sent straight to your device.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQS -->
+    <div class="container mt-5 mb-4">
+        <h1 class="ms-4 pb-4">Youtube Downloader FAQ</h1>
+
+        <div class="accordion" id="faqExample">
+            <div class="card">
+                <div class="card-header p-2" id="headingOne" type="button">
+                    <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h4>Why do I need to use a SPECCRM.COM YouTube Downloader?</h4>
+                    </button>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                    <div class="card-body">
+                        <p>You can download videos directly on Youtube, but not every video may be downloaded
+                            that
+                            way. Using an <b>online Youtube downloader</b> is a surefire to grab every Youtube
+                            video
+                            that
+                            you
+                            will come upon. Even better, you may convert Youtube to MP3 to lessen the load on
+                            your
+                            device. Either way, using a <b>Youtube online downloader</b> allows you to access
+                            Youtube
+                            videos
+                            and music offline so the fun literally never stops.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>Is it legal to download YouTube videos?</h4>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                    <div class="card-body">
+                        <p>It is only illegal to download Youtube videos if it is copyrighted. When a video
+                            falls under
+                            these three categories-- public domain, creative commons, and copyleft-- you can
+                            legally
+                            download it. Chances are, a video on Youtube falls under one of these three
+                            categories. That
+                            means, you won’t have any shortage of videos or music to download.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <h4>Is it safe to use an online Youtube video downloader?</h4>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                    <div class="card-body">
+                        <p>Yes, it is! YouTube Downloader won’t need you downloading software that may contain
+                            Trojans
+                            or malware. The platform is completely online, which means you don’t have to suffer
+                            from the
+                            endless ads that come along with an installed Youtube downloader. As far as I’m
+                            considered,
+                            an online Youtube video downloader is a win-win.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <h4>How do I save the downloaded videos from Youtube to my device?</h4>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqExample">
+                    <div class="card-body">
+                        <p>In using an online <b>Youtube downloader </b>or a <b>Youtube downloader app</b>, you
+                            will
+                            only need to
+                            paste the URL of the video to the provided box. That’s pretty much it. You have the
+                            option
+                            to put the downloaded videos or music in the specified folder on your phone or PC
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            <h4>what formats are supported by Youtube Downloader?</h4>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqExample">
+                    <div class="card-body">
+                        <p>Youtube supports 13 video formats, including MP4, MPEG4, MOV, AVI, WMV, and others.
+                            It also
+                            supports four audio formats (MP3 in MP3/WAV container, PCM audio in WAV container,
+                            AAC in
+                            MOV container, and FLAC). YouTube Downloader allows you to download a video as is,
+                            or you
+                            may choose to convert, say a Youtube video in WMV format, to an MP4, possibly
+                            because of
+                            playback purposes. If the video is in high definition or 4K, then YouTube Downloader
+                            may
+                            also be a<b>4K Youtube downloader</b> if that’s what you want it to be.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!--container-->
+
+{% endblock %}
+
+   

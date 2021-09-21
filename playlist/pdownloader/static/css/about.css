@@ -1,0 +1,30 @@
+
+/* about us */
+.abt-us{
+    font-size: 50px!important;
+    line-height: 1.2;
+}
+
+.abt-title{
+    color: #556770;
+    font-size: 20px;
+}
+
+.v__image{
+    background-position: center center;
+    background-size: cover;
+}
+
+/* last section */
+.dwload{
+    font-size: 50px!important;
+    color: #000;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.dwload-subtitle{
+    color: #556770;
+}
+.lst-sec{
+    width: 71%;
+}
